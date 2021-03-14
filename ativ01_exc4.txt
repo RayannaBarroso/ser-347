@@ -1,0 +1,792 @@
+ 
+INTRODUÇÃO A PROGRAMAÇÃO AO SENSORIAMENTO REMOTO
+
+LISTA DE EXERCÍCIOS 1 – CRIAÇÃO DE REPOSITÓRIO EXPERIMENTAL
+
+
+
+Rayanna Barroso de Oliveira Alves
+
+
+INPE
+São José dos Campos
+2021
+
+
+As ferramentas computacionais são abrangentes para o desenvolvimento programas e ferramentas a fim de formentar a utilização das técnicas de geoprocessamento e sensoriamento remoto. 
+Para desenvolver trabalhos e utilizar dados geoespaciais é necessária a compreensão de tecnologias computacionais e dos ambientes de computação que contribuam para o desenvolvimento 
+de códigos dados, ambientes computacionais para análises que venham a beneficiar os fluxos de trabalho práticos que permitam o aprendizado e fixação dos conceitos coputacionais e 
+entendimento da programação alfabetizada (NÜST et. al 2020).
+Dessa forma, o exercício 4 da lista de exercícios 01 solicitado foi realizado baseado no tutorial git e GitHub  (trabalhando com git e GitHub. Assim, foi criada uma conta no GitHub, 
+seguido os Professores da disciplina. Também foi clonado o repositório “ser-347” no repositório local (git clone https://github.com/RayannaBarroso/ser-347), e em seguida realizada a 
+verificação do status do repositório (git status) e modificado o conteúdo do aquivo no repositório local. Ao ralizar o git commit foi solicitado o usuáio e a senha (diferentemente dos 
+passos informados no tutorial: após o git push). Concluída a inserção, foi realizada o git pull para a realização da cópia local com o repositório remoto, com sucesso. Não foi possível 
+realizar o git pushno primeiro momento (erro fatal, sendo assim, foi verificado que o repositório local e o remoto não estavam cotendo os mesmos arquivos e, dessa forma, foi corrigido 
+manualmente as informações do arquivo de texto e possibilidando a realização do git push com sucesso. 
+Para adicionar um novo arquivo ao repositório ser-347 (fatorial.py) foi necessário o download do programa “notepad++” o qual possui facilidade em salvar o arquivo texto já no formato 
+Phyton. Mas antes disso, foi tentado reproduziro código do tutorial no git, o que resultou em insucesso. Dessa forma, após salvar o fatorial.py no repositório local, foi adicionado o 
+arquivo (git add fatorial.py) com a confirmação do mesmo com o git commit -m “fatorial”, e levar a modificação do repositório local para o remoto git push.
+
+No Anexo 1, contam os passos e os códigos utilizados para desenvolver a atividade.
+
+
+
+
+Anexo 1
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~
+$ git clone https://github.com/RayannaBarroso/ser-347
+Cloning into 'ser-347'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+Receiving objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~
+$ 1s
+bash: 1s: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~
+$ ls
+'Ambiente de Impressão'@
+'Ambiente de Rede'@
+ AppData/
+'Application Data'/
+'Configurações Locais'@
+ Contacts/
+ Cookies@
+'Dados de Aplicativos'@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Menu Iniciar'@
+'Meus Documentos'@
+ Modelos@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{85b2adfa-0b80-11ea-8289-7429afa7b390}.TM.blf
+ NTUSER.DAT{85b2adfa-0b80-11ea-8289-7429afa7b390}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{85b2adfa-0b80-11ea-8289-7429afa7b390}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{860aed09-7d75-11e9-8258-7429afa7b390}.TxR.0.regtrans-ms
+ NTUSER.DAT{860aed09-7d75-11e9-8258-7429afa7b390}.TxR.1.regtrans-ms
+ NTUSER.DAT{860aed09-7d75-11e9-8258-7429afa7b390}.TxR.2.regtrans-ms
+ NTUSER.DAT{860aed09-7d75-11e9-8258-7429afa7b390}.TxR.blf
+ NTUSER.DAT{860aed0a-7d75-11e9-8258-7429afa7b390}.TM.blf
+ NTUSER.DAT{860aed0a-7d75-11e9-8258-7429afa7b390}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{860aed0a-7d75-11e9-8258-7429afa7b390}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ OneDrive.old/
+ Pictures/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Users/
+ Videos/
+'VirtualBox VMs'/
+ a1.asc
+ a1.asc.aux.xml
+ a1.prj
+ aaa.asc
+ aaa.asc.aux.xml
+ aaa.prj
+ aaa132345.asc
+ aaa132345.asc.aux.xml
+ aaa132345.prj
+ aaq.asc
+ aaq.asc.aux.xml
+ aaq.prj
+ activepresenter-8-2-2.exe*
+ agent.log
+ ale.asc
+ ale.asc.aux.xml
+ ale.prj
+ as.asc
+ as.asc.aux.xml
+ as.prj
+ fff.asc
+ fff.asc.aux.xml
+ fff.prj
+ ggg.asc
+ ggg.asc.aux.xml
+ ggg.prj
+ grassdata/
+ h.asc
+ h.asc.aux.xml
+ h.prj
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ oolol.asc
+ oolol.asc.aux.xml
+ oolol.prj
+ ooo.asc
+ ooo.asc.aux.xml
+ ooo.prj
+ photostage-free-slideshow-maker-8-10.exe*
+ rrrr.asc
+ rrrr.asc.aux.xml
+ rrrr.prj
+ ser-347/
+ sss.asc
+ sss.asc.aux.xml
+ sss.prj
+ ssss.asc
+ ssss.asc.aux.xml
+ ssss.prj
+ test.asc
+ test.asc.aux.xml
+ test.prj
+ teste.asc
+ teste.asc.aux.xml
+ teste.prj
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~
+$ cd ser-347
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git clone https://github.com/RayannaBarroso/ser-347
+Cloning into 'ser-347'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ ls
+LICENSE  README.md  ser-347/
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ cd ser-347
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ ls
+LICENSE  README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ ls -a
+./  ../  .git/  .gitignore  LICENSE  README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git checkout -- README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git checkout -- README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347/ser-347 (main)
+$ cd ..
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git log
+commit 393987e137cf497f0a91bbc68d33156a5bd2efd7 (HEAD -> main, origin/main, origin/HEAD)
+Author: RayannaBarroso <80478757+RayannaBarroso@users.noreply.github.com>
+Date:   Thu Mar 11 14:23:20 2021 -0300
+
+    Initial commit
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git checkout -- README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git checkout -- README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git add README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m
+error: switch `m' requires a value
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "Primeira versão do arquivo README.md"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Prof_Hernande@GEOSERE_01.(none)')
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "README.md"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Prof_Hernande@GEOSERE_01.(none)')
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m Primeira versão do arquivo README.md
+error: pathspec 'versão' did not match any file(s) known to git
+error: pathspec 'do' did not match any file(s) known to git
+error: pathspec 'arquivo' did not match any file(s) known to git
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "Primeira versão do arquivo README.md"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Prof_Hernande@GEOSERE_01.(none)')
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m 01 README.md
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Prof_Hernande@GEOSERE_01.(none)')
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ Username for 'https://github.com': gilberto-queiroz
+bash: Username: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "primeiro README.md"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Prof_Hernande@GEOSERE_01.(none)')
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git config --global user.email "rayannabarroso@hotmail.com"
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "Primeira versão do arquivo README.md"
+[main e8e65ee] Primeira versão do arquivo README.md
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), 2.59 KiB | 6.00 KiB/s, done.
+From https://github.com/RayannaBarroso/ser-347
+   393987e..7cdfaf4  main       -> origin/main
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git push
+$ git push
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git push
+fatal: O código de status de resposta não indica êxito: 401 (Unauthorized).
+To https://github.com/RayannaBarroso/ser-347
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/RayannaBarroso/ser-347'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ $ git push
+bash: $: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git add README.md
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   README.md
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main|MERGING)
+$ git commit
+[main 39a2cde] Merge branch 'main' of https://github.com/RayannaBarroso/ser-347
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git log
+commit 39a2cdef054581128be437cc5862a0df5b821718 (HEAD -> main)
+Merge: e8e65ee 7cdfaf4
+Author: Hernande Silva <rayannabarroso@hotmail.com>
+Date:   Sat Mar 13 10:52:35 2021 -0300
+
+    Merge branch 'main' of https://github.com/RayannaBarroso/ser-347
+
+commit e8e65eee6786b7c11fb15018f0ef1662503a2e84
+Author: Hernande Silva <rayannabarroso@hotmail.com>
+Date:   Sat Mar 13 10:12:30 2021 -0300
+
+    Primeira versão do arquivo README.md
+
+commit 7cdfaf4068f2cd8e10c9529fd7830a5abb8d7075 (origin/main, origin/HEAD)
+Author: RayannaBarroso <80478757+RayannaBarroso@users.noreply.github.com>
+Date:   Fri Mar 12 21:32:07 2021 -0300
+
+    Update README.md
+
+commit a31287778ed7e15bee1c921c9d3cfb76a9f01882
+Author: RayannaBarroso <80478757+RayannaBarroso@users.noreply.github.com>
+Date:   Fri Mar 12 21:31:04 2021 -0300
+
+    Update README.md
+
+commit 27c06b7c3414ab2f40c59b145c19bf378d58a48f
+Author: RayannaBarroso <80478757+RayannaBarroso@users.noreply.github.com>
+Date:   Fri Mar 12 21:29:28 2021 -0300
+
+    Update README.md
+
+commit 271cc594b47d7e30fbf3bd443fe3b982f439ba2b
+Author: RayannaBarroso <80478757+RayannaBarroso@users.noreply.github.com>
+Date:   Fri Mar 12 21:12:08 2021 -0300
+
+    Update README.md
+
+commit 393987e137cf497f0a91bbc68d33156a5bd2efd7
+Author: RayannaBarroso <80478757+RayannaBarroso@users.noreply.github.com>
+Date:   Thu Mar 11 14:23:20 2021 -0300
+
+    Initial commit
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 834 bytes | 834.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/RayannaBarroso/ser-347
+   7cdfaf4..39a2cde  main -> main
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ def Fatorial(num):
+bash: syntax error near unexpected token `('
+
+    while(num > 0):
+        produto = produto * num
+
+        num = num - 1
+
+    return produto
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$     produto = 1
+bash: produto: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$     while(num > 0):
+bash: syntax error near unexpected token `:'
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$         produto = produto * num
+bash: produto: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$         num = num - 1
+bash: num: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$     return produto
+bash: return: produto: numeric argument required
+bash: return: can only `return' from a function or sourced script
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ def Fatorial(num):
+bash: syntax error near unexpected token `('
+
+    while(num > 0):
+        produto = produto * num
+
+        num = num - 1
+
+    return produto
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$     produto = 1
+bash: produto: command not found
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$     while(num > 0):
+bash: syntax error near unexpected token `:'
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$         produto = produto * num
+bash: produto: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$         num = num - 1
+bash: num: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$     return produto
+bash: return: produto: numeric argument required
+bash: return: can only `return' from a function or sourced script
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ ^C
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fatorial.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "Adicionando uma função para cálculo do fatorial"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fatorial.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fatorial.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "fatorial"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fatorial.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git add fatorial.py
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fatorial.py
+
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ got commit -m "fatorial"
+bash: got: command not found
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git commit -m "fatorial"
+[main d404f61] fatorial
+ 1 file changed, 9 insertions(+)
+ create mode 100644 fatorial.py
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Prof_Hernande@GEOSERE_01 MINGW64 ~/ser-347 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 354.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/RayannaBarroso/ser-347
+   39a2cde..d404f61  main -> main
